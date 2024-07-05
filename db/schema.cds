@@ -1,4 +1,4 @@
-namespace com.logali;
+namespace com.grillo;
 
 entity Products {
 
@@ -16,7 +16,7 @@ entity Products {
 
 };
 
-entity Suplier {
+entity Suppliers {
 
     key ID         : UUID;
         Name       : String;
@@ -30,7 +30,7 @@ entity Suplier {
         Fax        : String;
 };
 
-entity Category {
+entity Categories {
 
     key ID   : String(1);
         Name : String
@@ -54,7 +54,7 @@ entity UnitOfMeasures {
 entity DimensionUnits {
     key ID          : String(2);
         Description : String;
-}
+};
 
 entity Months {
     key ID               : String(2);
@@ -62,7 +62,7 @@ entity Months {
         ShortDescription : String(3);
 };
 
-entity ProductReview {
+entity ProductReviews {
     key Name    : String;
         Rating  : Integer;
         Comment : String;
@@ -72,4 +72,4 @@ entity SalesData {
     key DeliveryDate : DateTime;
         Revenue      : Decimal(16, 2);
 
-}
+};

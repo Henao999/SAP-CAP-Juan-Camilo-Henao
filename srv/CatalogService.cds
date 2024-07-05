@@ -1,7 +1,7 @@
-using com.logali as logali from '../db/schema';
+using com.grillo as grillo from '../db/schema';
 
 service CatalogService {
 
-    entity CatalogService as projection on logali.Products;
+    entity CatalogService as projection on grillo.Products;
 
 }
